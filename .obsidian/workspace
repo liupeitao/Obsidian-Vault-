@@ -1,0 +1,257 @@
+{
+  "main": {
+    "id": "9f8ad9caadfad347",
+    "type": "split",
+    "children": [
+      {
+        "id": "120f51b77346ff08",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        },
+        "pane-relief:history-v1": {
+          "pos": 0,
+          "stack": [
+            {
+              "leaf": "120f51b77346ff08",
+              "group": null,
+              "state": "{\"type\":\"empty\",\"state\":{}}",
+              "eState": "{}"
+            }
+          ]
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a6f84905a3168f2e",
+    "type": "split",
+    "children": [
+      {
+        "id": "688ab510f22db1df",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e3a51e098304d945",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": []
+            }
+          },
+          {
+            "id": "394d5b42c408938a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "h",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": []
+            }
+          },
+          {
+            "id": "c1e481630ea92d9a",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": []
+            }
+          },
+          {
+            "id": "a4445b288944be77",
+            "type": "leaf",
+            "state": {
+              "type": "kanban",
+              "state": {
+                "file": "kanbans/words.md"
+              }
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "leaf": "a4445b288944be77",
+                  "group": null,
+                  "state": "{\"type\":\"kanban\",\"state\":{\"file\":\"kanbans/words.md\"}}",
+                  "eState": "{}"
+                },
+                {
+                  "leaf": "a4445b288944be77",
+                  "group": null,
+                  "state": "{\"type\":\"kanban\",\"state\":{\"file\":\"kanbans/未命名看板.md\"}}",
+                  "eState": "{}"
+                },
+                {
+                  "leaf": "a4445b288944be77",
+                  "group": null,
+                  "state": "{\"type\":\"empty\",\"state\":{}}",
+                  "eState": "{}"
+                }
+              ]
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 362
+  },
+  "right": {
+    "id": "7d948cb03cf2e371",
+    "type": "split",
+    "children": [
+      {
+        "id": "d4e6c4c7b41acd6b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "303537f1d5d121d0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": []
+            }
+          },
+          {
+            "id": "9f6027c52c388082",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": []
+            }
+          },
+          {
+            "id": "bfdeb72d336a22ba",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": []
+            }
+          },
+          {
+            "id": "d3eca3078606da6b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": []
+            }
+          },
+          {
+            "id": "e84c7e079da71765",
+            "type": "leaf",
+            "state": {
+              "type": "reminder-list",
+              "state": {}
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": []
+            }
+          },
+          {
+            "id": "aa61e3f1dd107b09",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_nodes",
+              "state": {}
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": []
+            }
+          },
+          {
+            "id": "625b02e3ab79ac86",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_style",
+              "state": {}
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": []
+            }
+          },
+          {
+            "id": "a735903904ce395c",
+            "type": "leaf",
+            "state": {
+              "type": "DICE_ROLLER_VIEW",
+              "state": {}
+            },
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": []
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 265
+  },
+  "active": "120f51b77346ff08",
+  "lastOpenFiles": [
+    "kanbans/words.md",
+    "fsgkd l.md",
+    "202206031950.md",
+    "未命名.md",
+    "未命名 4.md",
+    "i.md",
+    "kanbans/mybatis.md",
+    "Notea/2022-06-16.md",
+    "Notea/2022-06-09.md",
+    "Notea/2022-06-03.md"
+  ]
+}

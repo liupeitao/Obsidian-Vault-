@@ -1,0 +1,164 @@
+# you-get
+
+### 1. re.sbub
+
+1. title = re.sub(r'[\/:*?"<>|]', '', title)  
+    这行代码使用了Python的`re`​模块，将`title`​变量中的任何特殊字符都删除掉。正则表达式`[\\/:*?"<>|]`​匹配了以下字符：`\`​、`/`​、`:`​、`*`​、`?`​、`"`​、`<`​、`>`​和`|`​。
+
+然后，使用`re`​模块的`sub`​方法来将所有匹配的字符替换成空字符串，从而将它们从`title`​变量中删除。修改后的`title`​变量被返回。
+
+例如，如果`title`​最初包含字符串"My Title/With Special: Characters?"，那么这行代码会将其修改为"My TitleWith Special Characters"。
+
+### 2. 如何将cookie字符串， 转化为字典？
+
+可以使用Python的`http.cookies`​模块将Cookie字符串转换为字典。下面是一个示例代码：
+
+```python
+import http.cookies
+
+cookie_str = 'buvid3=86176916-45B6-0D98-BF8C-65342694F15515780infoc; b_nut=1679667815; i-wanna-go-back=-1; _uuid=F18E9585-61B5-C7A9-78E7-127B3C8A572D20044infoc; nostalgia_conf=-1; CURRENT_FNVAL=4048; rpdid=|(um))mkmu~u0J\'uY~mYY~)RY; buvid4=45777BEA-4749-2738-AF39-7215CB6F29FF29973-023031823-9D2Z/J3ixQn9+7gNGCQe9g==; header_theme_version=CLOSE; DedeUserID=491102369; DedeUserID__ckMd5=2f87ac3cfe6224c2; b_ut=5; CURRENT_PID=ef4e2e70-cd66-11ed-8603-6de18eeb95a4; FEED_LIVE_VERSION=V8; fingerprint=129772b60420a5096196429b3abd830e; buvid_fp_plain=undefined; buvid_fp=129772b60420a5096196429b3abd830e; home_feed_column=5; CURRENT_QUALITY=80; SESSDATA=10d3caf5,1697675295,b0d80*42; bili_jct=2df9094bf9f582981feef4f7b028154f; bp_video_offset_491102369=787250458865434600; browser_resolution=1540-845; PVID=2; b_lsid=F32EE6E3_187A960B51B; innersign=1; sid=5lgsfmr3'
+
+cookies = htt	p.cookies.SimpleCookie()
+cookies.load(cookie_str)
+
+cookie_dict = {}
+for key, morsel in cookies.items():
+    cookie_dict[key] = morsel.value
+
+print(cookie_dict)
+
+```
+
+在上面的代码中，`cookie_str`​是一个包含多个Cookie的字符串，每个Cookie由名称和值组成，中间用等号连接，不同Cookie之间用分号分隔。`http.cookies.SimpleCookie()`​方法将Cookie字符串转换为Cookie对象。然后，可以遍历Cookie对象，并将其添加到一个字典中。最后，将该字典用于后续的请求中。
+
+3. you-get不支持多线程， 可以用aria2c代替  
+    aria2c -x 16 https://www.youtube.com/watch?v=CTa608Fs1jA
+
+    you-get是一款非常好用的命令行工具，用于下载网络上的视频和音频资源。以下是you-get常用的15条命令：
+
+    1. 下载视频：`you-get [视频链接]`​
+    2. 下载音频：`you-get -x [音频链接]`​
+    3. 下载指定格式的视频：`you-get -f [格式] [视频链接]`​
+    4. 下载指定格式的音频：`you-get -x -f [格式] [音频链接]`​
+    5. 下载指定清晰度的视频：`you-get -i -F [清晰度] [视频链接]`​
+    6. 下载指定清晰度的音频：`you-get -x -i -F [清晰度] [音频链接]`​
+    7. 下载B站视频：`you-get -u [B站视频链接]`​
+    8. 下载优酷视频：`you-get --format=mp4hd3 [优酷视频链接]`​
+    9. 下载爱奇艺视频：`you-get --itag=mp4hd3 [爱奇艺视频链接]`​
+    10. 下载YouTube视频：`you-get -o [下载目录] [YouTube视频链接]`​
+    11. 下载哔哩哔哩动画：`you-get --format=dash-flv -u [哔哩哔哩动画链接]`​
+    12. 下载网易云音乐歌曲：`you-get -o [下载目录] [网易云音乐歌曲链接]`​
+    13. 显示视频信息：`you-get -i [视频链接]`​
+    14. 显示音频信息：`you-get -i -x [音频链接]`​
+    15. 下载视频并合并为一个文件：`you-get -O [下载目录] [视频链接]`​
+
+    以上是you-get常用的15条命令，您可以根据需要进行选择和使用。
+
+### 3. json库示例
+
+```python
+import json
+
+json_str = '{"name": "John", "age": 30, "city": "New York"}'
+json_obj = json.loads(json_str)
+age = json_obj['age']
+print(age)  # 输出 30
+
+```
+
+### 4. beatifulsoup
+
+	1. 1.  soup = BeautifulSoup(html_doc, 'html.parser'): 创建BeautifulSoup对象来解析HTML文档。  
+	2.  tag = soup.find('tag'): 查找第一个匹配的HTML标签，并返回一个Tag对象。  
+	3.  tags = soup.find_all('tag'): 查找所有匹配的HTML标签，并返回一个Tag对象列表。  
+	4.  tag.contents: 获取Tag对象的所有直接子节点的列表。  
+	5.  tag.children: 获取Tag对象的所有直接子节点的生成器。  
+	6.  tag.get('attribute'): 获取Tag对象指定属性的值。  
+	7.  tag.parent: 获取Tag对象的直接父节点。  
+	8.  tag.text: 获取Tag对象中包含的所有文本内容。  
+	9.  tag.string: 获取Tag对象包含的单独字符串内容。  
+	10.  soup.prettify(): 以格式化后的形式输出BeautifulSoup对象。
+
+#### 标签选择器
+
+：通过 soup.find() 或 soup.find_all() 方法，传入 HTML 标签名作为参数来查找符合条件的标签。  
+	例：查找第一个 div 标签：soup.find('div')
+
+#### 属性选择器
+
+：使用 CSS 选择器的属性选择器来查找具有某个属性的标签。
+
+例：查找所有具有 class 属性的 div 标签：soup.select('div[class]')
+
+#### 文本获取
+
+：使用 tag.text 或 tag.get_text() 方法可以获取 HTML 标签的文本内容。
+
+例：获取第一个 h1 标签的文本内容：soup.find('h1').text
+
+#### 嵌套选择
+
+：使用 tag.find() 或 tag.find_all() 方法可以嵌套选择 HTML 标签，类似于 CSS 选择器中的后代选择器。
+
+例：查找 div 标签内的第一个 h2 标签：soup.find('div').find('h2')
+
+#### 遍历文档树
+
+：使用 tag.find_all() 方法或 tag.children 属性可以递归遍历文档树来查找标签或标签内容。
+
+例：查找所有 div 标签内的文本内容：[tag.text for tag in soup.find_all('div')]
+
+#### 子标签选择
+
+：使用 tag.contents 属性可以获取 HTML 标签的所有直接子标签。
+
+例：查找第一个 div 标签的所有直接子标签：soup.find('div').contents
+
+#### 父标签选择
+
+：使用 tag.parent 属性可以获取 HTML 标签的直接父标签。
+
+例：查找第一个 h2 标签的直接父标签：soup.find('h2').parent
+
+#### 兄弟标签选择
+
+：使用 tag.next_sibling 和 tag.previous_sibling 属性可以获取 HTML 标签的前一个或后一个兄弟标签。
+
+例：查找第一个 div 标签后面的兄弟标签：soup.find('div').next_sibling
+
+#### CSS 选择器
+
+：使用 soup.select() 方法可以通过 CSS 选择器选择 HTML 标签，返回一个列表。
+
+例：查找所有 class 属性为 "example" 的 p 标签：soup.select('p.example')
+
+#### 正则表达式
+
+：使用正则表达式来匹配 HTML 标签的属性值或文本内容。
+
+例：查找所有 href 属性以 "https://" 开头的 a 标签：soup.find_all('a', href=re.compile('^https://'))
+
+### 4.url解析cookie
+
+Convert [curl](https://curl.se/docs/manual.html) commands to Python, JavaScript and more  
+[Convert curl commands to code](https://curlconverter.com/)  
+![[Pasted image 20230423132348.png]]  
+5.  
+ffmpeg  
+moviepy  
+youtube-dl  
+iframe
+
+### python命名规范
+
+Python 项目规范对于文件名、文件夹名、变量名、类名、资源文件夹名等都有一定的命名规范。以下是一些常见的规范：
+
+1. 文件名：文件名应该使用小写字母，多个单词之间使用下划线 "_" 连接。例如，"hello_world.py"。
+2. 文件夹名：文件夹名应该使用小写字母，多个单词之间使用下划线 "_" 连接。例如，"my_project"。
+3. 变量名：变量名应该使用小写字母，多个单词之间使用下划线 "_" 连接。例如，"my_variable"。
+4. 类名：类名应该使用大写字母开头的驼峰式命名规范。例如，"MyClass"。
+5. 资源文件夹名：资源文件夹名应该使用小写字母，多个单词之间使用下划线 "_" 连接。例如，"images"、"data_files"等。
+
+### 爬取Voa
+
+首页  ['http://learningenglish.voanews.com']<br />请求 https://learningenglish.voanews.com/z/1581?p=

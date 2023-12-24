@@ -1,0 +1,10 @@
+{
+  "cssTheme": "Everforest",
+  "translucency": true,
+  "theme": "moonstone",
+  "baseFontSize": 16,
+  "accentColor": "#f0149f",
+  "enabledCssSnippets": [
+    "custom-admonitions.90eca1"
+  ]
+}
